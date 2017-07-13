@@ -3,11 +3,12 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Advent Pro', sans-serif;
+    box-sizing: border-box;
 }
-#navbar {
+.navbar {
     overflow: hidden;
-    background-color: #fff;
     position: fixed;
+    transition: all 0.25s ease;
     /* Set the navbar to fixed position */
     top: 0;
     /* Position the navbar at the top of the page */
@@ -15,16 +16,16 @@ html, body {
     /* Full width */
     z-index: 9;
     height: 8%;
+    background-color: #fff;
 }
 
-#navbar a {
+.navbar a {
     float: left;
     display: block;
-    color: #6c595b;
     text-align: center;
-    padding: 15px 20px;
+    padding: 10px 20px;
     text-decoration: none;
-    font-size: 4em;
+    font-size: 2em;
 }
 
 .full {
@@ -94,6 +95,16 @@ html, body {
 }
 
 
-.hide {
+.homenav {
+  background-color: transparent;
+  top: 40%;
+  position: absolute;
+  height: 30%;
+  font-size: 4em;
+}
+.homenav a {
+  padding: 0px 90px;
+}
+.homenav a:first-child {
   display: none;
 }

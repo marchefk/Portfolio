@@ -7,6 +7,20 @@ let icons = {
   'contact': '<i class="fa fa-envelope-open-o" aria-hidden="true"></i>'
 }
 
+let homebottom = 1/2*($('#home').offset().top + $('#home').height());
+$(window).on('scroll',function(){
+
+    // we round here to reduce a little workload
+    let stop = Math.round($(window).scrollTop());
+    if (stop > homebottom) {
+        $('.navbar').removeClass('homenav');
+    } else {
+        $('.navbar').addClass('homenav');
+    }
+
+});
+
+
 navbar.forEach(function(e){
   console.log(e);
   e.onMouseOver = function() {
