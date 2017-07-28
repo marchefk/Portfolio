@@ -1,5 +1,5 @@
-let navbar = document.getElementsByClassName('nav');
-navbar = [].slice.call(navbar);
+let navibar = document.getElementsByClassName('navi');
+navibar = [].slice.call(navibar);
 let icons = {
   'home': '<i class="fa fa-home" aria-hidden="true"></i>',
   'about': '<i class="fa fa-user-circle-o" aria-hidden="true"></i>',
@@ -10,18 +10,18 @@ let icons = {
 let homebottom = 1/2*($('#home').offset().top + $('#home').height());
 $(window).on('scroll',function(){
 
-    // we round here to reduce a little workload
+ navi// we round here to reduce a little workload
     let stop = Math.round($(window).scrollTop());
     if (stop > homebottom) {
-        $('.navbar').removeClass('homenav');
+        $('.navibar').removeClass('homenavi');
     } else {
-        $('.navbar').addClass('homenav');
+        $('.navibar').addClass('homenavi');
     }
 
 });
 
 
-navbar.forEach(function(e){
+navibar.forEach(function(e){
   console.log(e);
   e.onMouseOver = function() {
     for(var i in icons){

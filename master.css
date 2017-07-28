@@ -5,21 +5,27 @@ html, body {
     font-family: 'Advent Pro', sans-serif;
     box-sizing: border-box;
 }
-.navbar {
-    overflow: hidden;
+
+body {
+  background-color: #e0dddb;
+}
+
+.navibar {
+    overflow:navdden;
     position: fixed;
     transition: all 0.25s ease;
-    /* Set the navbar to fixed position */
+    /* Set the navibar to fixed position */
     top: 0;
-    /* Position the navbar at the top of the page */
+    /* Position the navibar at the top of the page */
     width: 100%;
     /* Full width */
     z-index: 9;
     height: 8%;
-    background-color: #fff;
+    background-color: rgba(255,255,255,0.95);
 }
 
-.navbar a {
+.navibar a {
+  color: black;
     float: left;
     display: block;
     text-align: center;
@@ -31,13 +37,11 @@ html, body {
 .full {
     height: 100%;
     width: 100%;
-    background-color: #eaeaea;
     padding-top: 60px;
     /* Add a top padd to avoid content overlay */
 }
 
 #home {
-    background-color: #a68c73;
     background-image: url('/Images/comp2_1600web.jpg');
     background-repeat: no-repeat;
     background-position: left center;
@@ -45,11 +49,9 @@ html, body {
 }
 
 #about {
-    background-color: #f1f2f2;
 }
 
 #projects {
-    background-color: #f1f2f2;
 }
 
 .gallery {
@@ -91,20 +93,19 @@ html, body {
 
 
 #contact {
-    background-color: #f1f2f2;
 }
 
-
-.homenav {
+/*
+.homenavi {
   background-color: transparent;
   top: 40%;
   position: absolute;
   height: 30%;
   font-size: 4em;
 }
-.homenav a {
+.homenavi a {
   padding: 0px 90px;
 }
-.homenav a:first-child {
+.homenavi a:first-child {
   display: none;
-}
+}*/
