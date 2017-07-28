@@ -10,7 +10,7 @@ let icons = {
 let homebottom = 1/2*($('#home').offset().top + $('#home').height());
 $(window).on('scroll',function(){
 
- navi// we round here to reduce a little workload
+ // we round here to reduce a little workload
     let stop = Math.round($(window).scrollTop());
     if (stop > homebottom) {
         $('.navibar').removeClass('homenavi');
